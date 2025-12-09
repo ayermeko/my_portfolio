@@ -16,5 +16,5 @@ export default defineConfig(({ mode }) => ({
     },
   },
   // GitHub Pages deployment configuration
-  base: process.env.NODE_ENV === 'production' ? '/my_portfolio-project/' : '/',
+  base: mode === 'production' ? '/my_portfolio-project/' : '/',
 }));
